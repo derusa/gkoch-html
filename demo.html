@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GKoch Germany - About Us & Sale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .section-header {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .gk-story-section {
+            background-color: #f8f8f8;
+            padding: 4rem 0;
+        }
+        .gk-story-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .gk-story-section p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .gk-story-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .gk-aspiration-section {
+            padding: 4rem 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        .gk-aspiration-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .gk-aspiration-section p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .ux-ui-design-section {
+            background-color: #f2f2f2;
+            padding: 4rem 0;
+        }
+        .ux-ui-design-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .ux-ui-design-section p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .ux-ui-design-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .kitchen-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        .kitchen-section .card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .kitchen-section .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .kitchen-section .card-title {
+            font-weight: bold;
+            margin-top: 1rem;
+            color: #333;
+        }
+        .kitchen-section .card-text {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .slick-dots li button:before {
+            font-size: 10px;
+            color: #bbb;
+        }
+        .slick-dots li.slick-active button:before {
+            color: #333;
+        }
+
+        .footer-gk {
+            background-color: #343a40;
+            color: white;
+            padding: 3rem 0;
+            font-size: 0.9em;
+        }
+        .footer-gk h5 {
+            color: #f8f9fa;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+        .footer-gk ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-gk ul li {
+            margin-bottom: 0.8rem;
+        }
+        .footer-gk ul li a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-gk ul li a:hover {
+            color: #fff;
+        }
+        .footer-gk .contact-info {
+            line-height: 1.8;
+        }
+        .footer-gk .logo-footer {
+            max-width: 120px;
+            margin-bottom: 1rem;
+        }
+        .footer-gk .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            transition: color 0.3s ease;
+        }
+        .footer-gk .social-icons a:hover {
+            color: #f8f9fa;
+        }
+        .footer-bottom {
+            background-color: #212529;
+            color: #bbb;
+            padding: 1rem 0;
+            font-size: 0.85em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://via.placeholder.com/30x30/555" alt="GKoch Logo" class="me-2 rounded">
+            GKOCH
+            <small class="ms-1" style="font-size: 0.7em;">GERMANY</small>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        KHÁM PHÁ GKOCH
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Câu chuyện của GKoch</a></li>
+                        <li><a class="dropdown-item" href="#">Khát vọng GKoch</a></li>
+                        <li><a class="dropdown-item" href="#">Thiết kế UX, UI</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">SẢN PHẨM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">SALE OFF</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">BẢO HÀNH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">OUTLET</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="bi bi-search"></i> search...</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="bi bi-person"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="bi bi-bell"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="bi bi-bag"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="gk-story-section">
+    <div class="container">
+        <h1 class="section-header">câu chuyện <br> của <br> CHÚNG TÔI</h1>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://via.placeholder.com/600x400/ccc/fff?text=Smile+Everywhere" alt="Smile Everywhere" class="gk-story-image">
+            </div>
+            <div class="col-lg-6">
+                <h2>smile everywhere</h2>
+                <p>Từ anh yêu Gia Đình, từ khát vọng mang tới những người thân yêu của mình những điều tốt đẹp nhất.</p>
+                <p>Ngay trong những gian bếp nhỏ bình dị và ấm cúng của chúng tôi, từ những chi tiết nhỏ nhặt nhất như dao chỉ để trên giá mà không có chỗ treo, căn bếp nhỏ không đủ chỗ mỗi khi khách đến.</p>
+                <p>Chúng tôi quyết định tạo nên những sản phẩm được THIẾT KẾ TỪ CUỘC SỐNG (Design from Life) để tạo nên sự khác biệt từ những chi tiết nhỏ nhất.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gk-aspiration-section">
+    <div class="container">
+        <h1 class="section-header">Khát vọng GKoch</h1>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2>LAN TOẢ <br> những Trải nghiệm tiện nghi đến mọi gia đình</h2>
+                <p>Tập trung sáng tạo từ những chi tiết tưởng như nhỏ nhất, chúng tôi đã tạo nên một sự thay đổi to lớn mang lại sự tiện nghi trong sử dụng. GKoch luôn có mong muốn mang những sự tiện nghi đó đến từng căn bếp của mọi gia đình để lan toả sự chăm sóc, yêu thương trong từng thành viên của gia đình.</p>
+                <p>Đó là lý do chúng tôi luôn coi trọng việc tối ưu quy trình sản xuất, ứng dụng công nghệ để giảm thiểu chi phí sao cho những sản phẩm của GKoch có giá thành phù hợp nhất đến mọi khách hàng thân yêu.</p>
+            </div>
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://via.placeholder.com/600x400/999/eee?text=Convenient+for+Life" alt="Convenient for Life" class="gk-story-image">
+            </div>
+        </div>
+        <div class="mt-5">
+            <h2>Convenient for life</h2>
+            <p>Nấu ăn thật dễ dàng cùng GKoch</p>
+        </div>
+    </div>
+</section>
+
+<section class="ux-ui-design-section">
+    <div class="container">
+        <h1 class="section-header">UX/UI <br> DESIGN</h1>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://via.placeholder.com/600x400/eee/333?text=UX/UI+Design" alt="UX/UI Design" class="ux-ui-design-image">
+            </div>
+            <div class="col-lg-6">
+                <p>Trải nghiệm người dùng được Chúng tôi đánh giá thông qua độ chính xác và khả năng sử dụng. Thiết kế phải đáp ứng nhu cầu của người dùng, giải quyết các vấn đề và vượt trội hơn các tùy chọn hiện có.</p>
+                <p>Thiết kế phải tuân theo các thông số kỹ thuật vững về tính nhất quán và mang lại cảm giác trực quan cho người dùng. Chúng tôi ưu tiên UX từ khâu nghiên cứu ban đầu đến khâu sản xuất cuối cùng, tính đến các khía cạnh vật lý và kỹ thuật của sản phẩm.</p>
+                <p>Đối với các thiết bị gia dụng hiện đại có phần mềm và cảm biến, trải nghiệm người dùng đơn giản là rất quan trọng, và thiết kế là ấn tượng đầu tiên về sản phẩm.</p>
+                <p>Chúng tôi tập trung vào thân thiện với người dùng, ứng nhu cầu của người tiêu dùng một cách hiệu quả bằng cách sử dụng phương pháp lấy con người làm trung tâm. Các nguyên tắc thiết kế của chúng tôi đảm bảo người dùng có quyền kiểm soát, thấy tương tác thoải mái, ít phải chịu áp lực nhận thức, trải nghiệm nhất quán. Bằng cam kết hợp lý và thiết thực, chúng tôi hướng đến trải nghiệm người dùng vượt trội, trải nghiệm cho người tiêu dùng.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="kitchen-section">
+    <div class="container">
+        <h1 class="section-header">VÀO BẾP CÙNG GKOCH</h1>
+        <div class="slick-carousel">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250/f0f0f0/333?text=Spaghetti" class="card-img-top" alt="MÓN SPAGHETTI CHUẨN Ý">
+                <div class="card-body">
+                    <h5 class="card-title">MÓN SPAGHETTI CHUẨN Ý</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250/f0f0f0/333?text=Salad" class="card-img-top" alt="MÓN SALAD BỔ DƯỠNG">
+                <div class="card-body">
+                    <h5 class="card-title">MÓN SALAD BỔ DƯỠNG</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250/f0f0f0/333?text=Kitchen+Cleaning" class="card-img-top" alt="VỆ SINH BẾP ĐÚNG CÁCH">
+                <div class="card-body">
+                    <h5 class="card-title">VỆ SINH BẾP ĐÚNG CÁCH</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250/f0f0f0/333?text=Another+Recipe" class="card-img-top" alt="Món Ăn Khác">
+                <div class="card-body">
+                    <h5 class="card-title">Món Ăn Khác</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-gk">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <img src="https://via.placeholder.com/100x40/555/fff?text=GKOCH" alt="GKoch Logo" class="logo-footer">
+                <small class="d-block text-white">GERMANY</small>
+                <p class="mt-2 contact-info">NHẬP KHẨU & PHÂN PHỐI BỞI</p>
+                <p class="contact-info">EIED EUROPE IED JSC</p>
+                <p class="contact-info">CÔNG TY CP PHÂN PHỐI & XUẤT NHẬP KHẨU EUROPE</p>
+                <p class="contact-info">BT2-12 DTM Trung Văn, Nam Từ Liêm, Hà Nội</p>
+                <p class="contact-info">Hotline: 0823 289690</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>KHÁM PHÁ GKOCH</h5>
+                <ul>
+                    <li><a href="#">Câu chuyện của GKoch</a></li>
+                    <li><a href="#">Khát vọng GKoch</a></li>
+                    <li><a href="#">Thiết kế UX/UI</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h5>Chính sách:</h5>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách mua hàng</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Chính sách thành viên</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h5>Liên hệ:</h5>
+                <ul>
+                    <li><a href="#">Chăm Sóc Khách Hàng</a></li>
+                    <li><a href="#">Bảo Hành Sản Phẩm</a></li>
+                    <li><a href="mailto:office@eied.vn">Email: office@eied.vn</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h5>Đăng ký thành viên</h5>
+                <p>Đăng ký ngay, nhận ngay 100%!</p>
+                <ul class="list-unstyled">
+                    <li><a href="#">Tài khoản thành viên </a></li>
+                    <li><a href="#">Theo dõi đơn hàng </a></li>
+                    <li><a href="#" class="btn btn-light btn-sm mt-2">Đăng ký ngay</a></li>
+                </ul>
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer-bottom">
+    <div class="container">
+        &copy; 2024 GKOCH GERMANY
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.slick-carousel').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false, /* Set to true if you want arrows */
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+</body>
+</html>
